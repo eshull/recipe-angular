@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from './models/recipe.model'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  recipes: Recipe[] = [
+    new Recipe('Lasagna', 'noodles', 'bake'),
+    new Recipe('Dehydrated Bananas', 'bananas', 'dont bake')
+  ];
+
 }
